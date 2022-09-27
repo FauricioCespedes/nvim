@@ -16,4 +16,4 @@ vim.opt.smartindent = true
 vim.opt.wrap = false
 
 vim.g.mapleader = " "
-vim.opt.colorcolumn = "80"
+-- vim.opt.colorcolumn = "80"

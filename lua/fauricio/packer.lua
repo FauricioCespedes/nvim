@@ -22,17 +22,13 @@ return require('packer').startup(function(use)
     use("nvim-treesitter/nvim-treesitter-refactor")
 
     -- lsp
-    --[[use {
-        "neovim/nvim-lspconfig",
-        "williamboman/nvim-lsp-installer",
-    }]]--
     use {
         "neovim/nvim-lspconfig",
         'hrsh7th/nvim-compe',
         "williamboman/nvim-lsp-installer",
     }
 
-    -- lsp completation
+    -- completation
 	use({
 		"hrsh7th/nvim-cmp",
 		requires = {
@@ -51,11 +47,12 @@ return require('packer').startup(function(use)
 		},
 	})
 
+    -- tpope plugins
+    use("tpope/vim-surround")
+    use("tpope/vim-fugitive")
+
     -- theme
     use('folke/tokyonight.nvim')
-
-    -- surround
-    use("tpope/vim-surround")
 
     -- lua line
     use {
@@ -74,5 +71,14 @@ return require('packer').startup(function(use)
 
     -- polyglot
     use("sheerun/vim-polyglot")
+
+    -- css colors
+    use("ap/vim-css-color")
+
+    -- emmet 
+    use('mattn/emmet-vim')
+
+    -- auto close tag
+    use('alvan/vim-closetag')
 
 end)
