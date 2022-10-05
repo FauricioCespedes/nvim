@@ -50,6 +50,8 @@ return require('packer').startup(function(use)
     -- tpope plugins
     use("tpope/vim-surround")
     use("tpope/vim-fugitive")
+    use("tpope/vim-commentary")
+    use("tpope/vim-obsession")
 
     -- theme
     use('folke/tokyonight.nvim')
@@ -73,7 +75,7 @@ return require('packer').startup(function(use)
     use("sheerun/vim-polyglot")
 
     -- css colors
-    use("ap/vim-css-color")
+    use("brenoprata10/nvim-highlight-colors")
 
     -- emmet 
     use('mattn/emmet-vim')

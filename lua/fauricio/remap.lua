@@ -51,9 +51,18 @@ nnoremap("<S-TAB>", ":bprevious<CR>")
 -- close a tab
 nnoremap("<leader>qq", ":bdelete<CR>")
 
+-- close all tabs
+nnoremap("<leader>qa", "<C-w>o")
+
 -- center the line you are searching
 nnoremap("n", "nzzzv")
 nnoremap("N", "Nzzzv")
+
+-- show the lateral tree
+nnoremap("<leader>pv", ":wincmd v<bar> :Ex <bar> :vertical resize 30 <CR>")
+
+-- just exit vim
+-- nnoremap("ZZ", "<C-w>o ZZ")
 
 -- create new lines up and down you are
 nnoremap("<Enter>", "o<Esc>0Dk")
